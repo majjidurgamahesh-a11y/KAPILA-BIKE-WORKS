@@ -82,6 +82,11 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); margin-bottom: 2rem; }
 }
 .logo i { color: var(--red); font-size: 1.5rem; }
 .logo em { color: var(--red); font-style: normal; }
+img.logo {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+}
 .nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links a {
   font-weight: 600; text-transform: uppercase; font-size: .85rem;
@@ -274,4 +279,9 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); margin-bottom: 2rem; }
 @media (max-width: 500px) {
   .section { padding: 4rem 0; }
   .hero-btns .btn { width: 100%; justify-content: center; }
+}
+
+.logo {
+  font-family: var(--font-display); font-weight: 900; font-size: 1.2rem;
+  display: flex; align-items: center; gap: .6rem; color: var(--white);
 }
